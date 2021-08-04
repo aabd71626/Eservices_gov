@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">خدمات الموظفين</string>
+    <string name="app_owner">وحدة التطبيقات المالية وزارة المالية@2021</string>
+
+    <string name="drawer_open" />
+    <string name="drawer_close" />
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
