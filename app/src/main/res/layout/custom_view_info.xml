@@ -2,10 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_marginLeft="23dp"
     android:layout_marginRight="23dp"
     android:layout_marginBottom="18dp"
-    android:layout_weight="1"
     android:background="@color/card_view_background"
     android:layoutDirection="rtl"
     android:orientation="horizontal">
@@ -17,8 +17,8 @@
         android:layout_weight="1"
         android:fontFamily="@font/amariya_bold"
         android:gravity="center"
-        android:text="الاسم"
-        android:textColor="@color/black"
+        tools:text="الاسم"
+        android:textColor="@color/text_color1"
         android:textSize="17dp" />
 
     <TextView
@@ -28,7 +28,7 @@
         android:layout_weight="1"
         android:fontFamily="@font/amariya_bold"
         android:gravity="center"
-        android:text="محمد محمود"
-        android:textColor="@color/text_color1"
+        tools:text="محمد محمود"
+        android:textColor="@color/text_color2"
         android:textSize="17dp" />
 </LinearLayout>

@@ -4,4 +4,15 @@
         <attr name="titleInfo" format="string"/>
         <attr name="valueInfo" format="string"/>
     </declare-styleable>
+    <declare-styleable name="attr_custom_salary_info_item">
+        <attr name="titleSalaryInfo" format="string"/>
+        <attr name="valueSalaryInfo" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="attr_custom_link_button_item">
+        <attr name="iconLinkButton" format="reference"/>
+        <attr name="titleLinkButton" format="string"/>
+        <attr name="subTitleLinkButton" format="string"/>
+        <attr name="subTitleLinkButtonIsVisibile" format="boolean"/>
+    </declare-styleable>
 </resources>

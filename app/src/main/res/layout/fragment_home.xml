@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbars="none"
     tools:context=".views.fragments.HomeFragment">
 
     <LinearLayout
@@ -16,7 +17,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="19dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="19dp"
             app:cardBackgroundColor="@color/card_view_background"
             app:cardCornerRadius="5dp"
             app:cardElevation="8dp">
@@ -34,7 +37,7 @@
                     android:fontFamily="@font/amariya_heavy"
                     android:gravity="center"
                     android:text="البيانات الاساسية"
-                    android:textColor="@color/black"
+                    android:textColor="@color/text_color1"
                     android:textSize="20dp" />
 
                 <View
@@ -69,6 +72,183 @@
                     app:valueInfo="مهندس حاسوب" />
 
             </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="19dp"
+            app:cardBackgroundColor="@color/card_view_background"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/amariya_heavy"
+                    android:gravity="center"
+                    android:text="البيانات المالية للموظف"
+                    android:textColor="@color/text_color1"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/white_700"
+                    android:layout_marginBottom="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:paddingBottom="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.eservices.gov.ps.views.custom.CustomSalaryInfoItem
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:titleSalaryInfo="مبلغ اخر راتب في البنك"
+                            app:valueSalaryInfo="6500 شيكل"
+                            android:layout_weight="1"/>
+                        <com.eservices.gov.ps.views.custom.CustomSalaryInfoItem
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:titleSalaryInfo="إجمالي مبلغ المستحقات"
+                            app:valueSalaryInfo="807549.58 شيكل"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="15dp">
+                        <com.eservices.gov.ps.views.custom.CustomSalaryInfoItem
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:titleSalaryInfo="مبلغ بدل المواصلات"
+                            app:valueSalaryInfo="0 شيكل"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginBottom="19dp"
+            app:cardBackgroundColor="@color/links_card_view_background2"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="8dp">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal|top"
+                    android:background="@color/links_card_view_background"
+                    android:layout_marginBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/amariya_heavy"
+                    android:gravity="center"
+                    android:text="روابط مهمة"
+                    android:layout_gravity="top|right"
+                    android:textColor="@color/white"
+                    android:textSize="25dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginBottom="17dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.eservices.gov.ps.views.custom.CustomlinkButtonItem
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:iconLinkButton="@drawable/ic_document"
+                            app:subTitleLinkButton="شهر يونيو, 2021"
+                            app:subTitleLinkButtonIsVisibile="true"
+                            app:titleLinkButton="استمارة اخر \nراتب"
+                            android:layout_marginLeft="5dp"/>
+
+                        <com.eservices.gov.ps.views.custom.CustomlinkButtonItem
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:iconLinkButton="@drawable/ic_safe"
+                            app:titleLinkButton="تفاصيل\nالمتأخرات"
+                            android:layout_marginRight="5dp"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.eservices.gov.ps.views.custom.CustomlinkButtonItem
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:iconLinkButton="@drawable/ic_users"
+
+                            app:titleLinkButton="شؤون\nالموظفين\nالقياسي"
+                            android:layout_marginLeft="5dp"/>
+
+                        <com.eservices.gov.ps.views.custom.CustomlinkButtonItem
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:iconLinkButton="@drawable/ic_folder"
+                            app:titleLinkButton="خدمات الديوان"
+                            android:layout_marginRight="5dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </FrameLayout>
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>

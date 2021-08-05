@@ -27,6 +27,7 @@
             android:gravity="center"
             android:text="دولة فلسطين\nوزارة المالية"
             android:textSize="25dp"
+            android:textColor="@color/black"
             android:fontFamily="@font/amariya_bold"
             android:layout_marginTop="8dp"/>
         <TextView
@@ -35,6 +36,7 @@
             android:gravity="center"
             android:text="نظام خدمات الموظفين الالكترونية"
             android:textSize="24dp"
+            android:textColor="@color/text_color1"
             android:fontFamily="@font/amariya_regular"
             android:layout_marginTop="30dp"/>
 
