@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="@color/white_700"
+    android:layoutDirection="rtl"
+    tools:context=".views.fragments.HomeFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="19dp"
+        app:cardBackgroundColor="@color/card_view_background"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/amariya_heavy"
+                android:gravity="center"
+                android:text="تفاصيل المنأخرات"
+                android:textColor="@color/text_color1"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white_700"
+                android:layout_marginBottom="15dp"/>
+
+            <com.eservices.gov.ps.views.custom.CustomInfoItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleInfo="إجمالي قيمة مستحقات الموظف"
+                android:layout_marginTop="20dp"
+                app:valueInfo="1000 شيكل" />
+
+            <com.eservices.gov.ps.views.custom.CustomInfoItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:titleInfo="تاريخ اخر تحديث"
+                app:valueInfo="16/03/2021" />
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>
+

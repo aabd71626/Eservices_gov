@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="rtl"
+    android:stretchColumns="1,2,3">
+
+    <TableRow>
+        <TextView
+            android:id="@+id/additions_num"
+            tools:text="04/2020"
+            android:layout_column="1"
+            android:minWidth="40dp"
+            android:theme="@style/valueTableStyle"/>
+        <TextView
+            android:id="@+id/additions_codeNum"
+            android:layout_column="1"
+            tools:text="-152"
+            android:minWidth="40dp"
+
+            android:theme="@style/valueTableStyle" />
+        <TextView
+            android:id="@+id/additions_title"
+            android:layout_column="1"
+            android:text="-159-"
+            android:minWidth="40dp"
+            android:theme="@style/valueTableStyle" />
+    </TableRow>
+</TableLayout>

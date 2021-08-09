@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".views.activities.SalaryDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_700"
+        android:layoutDirection="rtl"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginRight="19dp"
+            app:cardBackgroundColor="@color/card_view_background"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/amariya_heavy"
+                        android:gravity="center_vertical"
+                        android:text="ملخص راتب 06/2021"
+                        android:textColor="@color/text_color1"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/btn_print_shape"
+                        android:drawableRight="@drawable/ic_print"
+                        android:fontFamily="@font/amariya_bold"
+                        android:gravity="center"
+                        android:text="طباعة"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/white_700" />
+
+                <com.eservices.gov.ps.views.custom.CustomInfoItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleInfo="الاساسي"
+                    app:valueInfo="0" />
+
+                <com.eservices.gov.ps.views.custom.CustomInfoItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleInfo="علاوات"
+                    app:valueInfo="1400" />
+
+                <com.eservices.gov.ps.views.custom.CustomInfoItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleInfo="إجمالي"
+                    app:valueInfo="1400" />
+
+                <com.eservices.gov.ps.views.custom.CustomInfoItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleInfo="الخصميات"
+                    app:valueInfo="0" />
+
+                <com.eservices.gov.ps.views.custom.CustomInfoItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleInfo="ضريبة"
+                    app:valueInfo="27" />
+
+                <com.eservices.gov.ps.views.custom.CustomInfoItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleInfo="إستقطاعات"
+                    app:valueInfo="27" />
+
+                <com.eservices.gov.ps.views.custom.CustomInfoItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleInfo="فروقات"
+                    app:valueInfo="0" />
+
+                <com.eservices.gov.ps.views.custom.CustomInfoItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleInfo="في البنك "
+                    app:valueInfo="132" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginRight="19dp"
+            app:cardBackgroundColor="@color/card_view_background"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/amariya_heavy"
+                    android:gravity="center"
+                    android:text="بيانات المواطن"
+                    android:textColor="@color/text_color1"
+                    android:textSize="20dp" />
+
+
+                <com.eservices.gov.ps.views.custom.CustomInfoItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleInfo="الاسم"
+                    app:valueInfo="محمود محمد" />
+
+                <com.eservices.gov.ps.views.custom.CustomInfoItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleInfo="رقم الهوية"
+                    app:valueInfo="978461523" />
+
+                <com.eservices.gov.ps.views.custom.CustomInfoItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleInfo="السلم الوظيفي"
+                    app:valueInfo="كادر سلطة الوطنية" />
+
+                <com.eservices.gov.ps.views.custom.CustomInfoItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleInfo="الوزارة"
+                    app:valueInfo="وزارة المالية" />
+
+                <com.eservices.gov.ps.views.custom.CustomInfoItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleInfo="تصنيف"
+                    app:valueInfo="عقد ديوان الموظفين" />
+
+                <com.eservices.gov.ps.views.custom.CustomInfoItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleInfo="الوظيفة"
+                    app:valueInfo="مهندس برمجيات" />
+
+                <com.eservices.gov.ps.views.custom.CustomInfoItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleInfo="الحالة الاجتماعية"
+                    app:valueInfo="متزوج/ة" />
+
+                <com.eservices.gov.ps.views.custom.CustomInfoItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleInfo="عدد الزوجات"
+                    app:valueInfo="1" />
+
+                <com.eservices.gov.ps.views.custom.CustomInfoItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleInfo="عدد الأولاد"
+                    app:valueInfo="3" />
+
+                <com.eservices.gov.ps.views.custom.CustomInfoItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleInfo="عدد المعالين"
+                    app:valueInfo="3" />
+
+                <com.eservices.gov.ps.views.custom.CustomInfoItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleInfo="المؤهل العلمي"
+                    app:valueInfo="بكالوريس هندسة حاسوب" />
+
+                <com.eservices.gov.ps.views.custom.CustomInfoItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:titleInfo="ملاحظات"
+                    app:valueInfo="1" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="19dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="19dp"
+            android:background="@color/card_view_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/amariya_heavy"
+                android:gravity="center"
+                android:text="تفاصيل إحتساب راتب"
+                android:textColor="@color/text_color1"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white_700" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/salary_derails_tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layoutDirection="rtl"
+                app:tabIndicatorColor="@color/colorSelectTab"
+                app:tabIndicatorFullWidth="true"
+                app:tabSelectedTextColor="@color/colorSelectTab"
+                app:tabTextAppearance="@style/tabTextAppearance"
+                app:tabTextColor="@color/text_color1">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="الإضافات" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="الخصميات" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="الفروقات" />
+            </com.google.android.material.tabs.TabLayout>
+
+            <LinearLayout
+                android:id="@+id/salary_derails_linear_layout_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

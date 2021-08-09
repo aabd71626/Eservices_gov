@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".views.fragments.DifferencesFragment">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1,2,3,4,5,6">
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="1"
+                android:text="الشهر"
+                android:minWidth="40dp"
+
+                android:theme="@style/titleTableStyle" />
+
+            <TextView
+                android:layout_column="1"
+                android:text="مبالغ رواتب المستحقة\n(2720)"
+                android:minWidth="40dp"
+
+                android:theme="@style/titleTableStyle" />
+
+            <TextView
+                android:layout_column="1"
+                android:text="الإجمالي"
+                android:minWidth="40dp"
+                android:theme="@style/titleTableStyle" />
+
+        </TableRow>
+    </TableLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/discounts_rcv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        tools:itemCount="5"
+        tools:listitem="@layout/custom_differences_item" />
+
+</LinearLayout>

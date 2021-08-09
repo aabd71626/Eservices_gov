@@ -6,10 +6,12 @@
         <item android:title="الرئيسية">
             <menu>
                 <item
+                    android:id="@+id/menu_home"
                     android:icon="@drawable/ic_home"
                     android:title="الرئيسية"
                     app:showAsAction="always" />
                 <item
+                    android:id="@+id/menu_salary"
                     android:icon="@drawable/ic_salary"
                     android:title="قسيمة الراتب"
                     app:showAsAction="always" />
@@ -21,10 +23,12 @@
         <item android:title="المتأخرات">
             <menu>
                 <item
+                    android:id="@+id/menu_arrears_details"
                     android:title="تفاصيل المتأخرات"
                     app:showAsAction="always"
                     android:icon="@drawable/ic_details"/>
                 <item
+                    android:id="@+id/menu_arrears_movement"
                     android:title="حركة المتأخرات"
                     app:showAsAction="always"
                     android:icon="@drawable/ic_debt"/>
@@ -34,14 +38,17 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/menu_tuition_fees"
             android:title="تسديد رسوم دراسية"
             app:showAsAction="always"
             android:icon="@drawable/ic_payment"/>
         <item
+            android:id="@+id/menu_transportation"
             android:title="المواصلات"
             app:showAsAction="always"
             android:icon="@drawable/ic_bus"/>
         <item
+            android:id="@+id/menu_website"
             android:title="موقع وزارة المالية"
             app:showAsAction="always"
             android:icon="@drawable/ic_website"/>

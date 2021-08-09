@@ -22,4 +22,32 @@
         <item name="android:actionMenuTextColor">@color/selver_dark</item>
 
     </style>
+
+    <style name="tabTextAppearance" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/amariya_heavy</item>
+        <item name="android:textSize">17dp</item>
+    </style>
+
+    <style name="titleTableStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/amariya_bold</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/text_color1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">6dp</item>
+    </style>
+    <style name="valueTableStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/amariya_light</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/text_color3</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">3dp</item>
+    </style>
+
+    <style name="valueTableStyle2" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/amariya_light</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">3dp</item>
+    </style>
 </resources>

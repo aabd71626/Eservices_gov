@@ -12,8 +12,11 @@
     <color name="card_view_background">#FEFEFE</color>
     <color name="links_card_view_background">#A38014</color>
     <color name="links_card_view_background2">#F8F8FA</color>
+    <color name="button_background">#5867DD</color>
     <color name="text_color1">#585C6D</color>
     <color name="text_color2">#9396A1</color>
     <color name="text_color3">#595D6E</color>
+    <color name="colorTabText">#4799FB</color>
+    <color name="colorSelectTab">#4799FB</color>
 
 </resources>

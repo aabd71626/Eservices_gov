@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="rtl"
+    android:stretchColumns="1,2,3,4,5,6">
+
+    <TableRow>
+        <TextView
+            android:id="@+id/additions_num"
+            tools:text="1"
+            android:layout_column="1"
+            android:theme="@style/valueTableStyle"/>
+        <TextView
+            android:id="@+id/additions_codeNum"
+            android:layout_column="1"
+            tools:text="456"
+            android:theme="@style/valueTableStyle" />
+        <TextView
+            android:id="@+id/additions_title"
+            android:layout_column="1"
+            android:text="نفقات طارئة"
+            android:theme="@style/valueTableStyle" />
+        <TextView
+            android:id="@+id/additions_amount"
+            android:layout_column="1"
+            android:text="-"
+            android:theme="@style/valueTableStyle" />
+        <TextView
+            android:id="@+id/additions_description"
+            android:layout_column="1"
+            android:text="مبلغ"
+            android:theme="@style/valueTableStyle" />
+        <TextView
+            android:id="@+id/additions_amount_money"
+            android:layout_column="1"
+            android:text="1400"
+            android:theme="@style/valueTableStyle" />
+    </TableRow>
+</TableLayout>
