@@ -12,17 +12,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.eservices.gov.ps.R;
-import com.eservices.gov.ps.databinding.FragmentAdditionsBinding;
 import com.eservices.gov.ps.databinding.FragmentDiscountsBinding;
-import com.eservices.gov.ps.models.Additions;
 import com.eservices.gov.ps.models.Discounts;
-import com.eservices.gov.ps.views.adapteres.CustomSalaryDetailsAdapter;
+import com.eservices.gov.ps.views.adapteres.SalaryDetailsAdapter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
-import java.util.List;
 
 public class DiscountsFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
@@ -33,7 +29,7 @@ public class DiscountsFragment extends Fragment {
     private String mParam1;
     private String mParam2;
     private ArrayList<Object> mDiscountsList;
-    private CustomSalaryDetailsAdapter mSalaryDetailsAdapter;
+    private SalaryDetailsAdapter mSalaryDetailsAdapter;
     private Context context;
     private FragmentDiscountsBinding binding;
 
@@ -79,7 +75,7 @@ public class DiscountsFragment extends Fragment {
         mDiscountsList.add(new Discounts(4, 5489, "نفقات طارئة4", "-", "مبلغ", "2000"));
         mDiscountsList.add(new Discounts(5, 7896, "نفقات طارئة5", "-", "مبلغ", "8000"));
 
-        mSalaryDetailsAdapter = new CustomSalaryDetailsAdapter(context, new LinkedList<Object>(Arrays.asList(mDiscountsList.toArray())));
+        mSalaryDetailsAdapter = new SalaryDetailsAdapter(context, new LinkedList<Object>(Arrays.asList(mDiscountsList.toArray())));
         binding.discountsRcv.setHasFixedSize(true);
         binding.discountsRcv.setLayoutManager(new LinearLayoutManager(context));
         binding.discountsRcv.setAdapter(mSalaryDetailsAdapter);

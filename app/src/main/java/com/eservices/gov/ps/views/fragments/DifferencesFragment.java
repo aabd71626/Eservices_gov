@@ -12,17 +12,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.eservices.gov.ps.R;
 import com.eservices.gov.ps.databinding.FragmentDifferencesBinding;
-import com.eservices.gov.ps.databinding.FragmentDiscountsBinding;
 import com.eservices.gov.ps.models.Differences;
-import com.eservices.gov.ps.models.Discounts;
-import com.eservices.gov.ps.views.adapteres.CustomSalaryDetailsAdapter;
+import com.eservices.gov.ps.views.adapteres.SalaryDetailsAdapter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
-import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -37,7 +33,7 @@ public class DifferencesFragment extends Fragment {
     private String mParam1;
     private String mParam2;
     private ArrayList<Differences> mDifferencesList;
-    private CustomSalaryDetailsAdapter mSalaryDetailsAdapter;
+    private SalaryDetailsAdapter mSalaryDetailsAdapter;
     private Context context;
     private FragmentDifferencesBinding binding;
 
@@ -90,7 +86,7 @@ public class DifferencesFragment extends Fragment {
         mDifferencesList.add(new Differences("","-100","-100"));
         mDifferencesList.add(new Differences("04/2020","-150","-150"));
 
-        mSalaryDetailsAdapter = new CustomSalaryDetailsAdapter(context, new LinkedList<Object>(Arrays.asList(mDifferencesList.toArray())));
+        mSalaryDetailsAdapter = new SalaryDetailsAdapter(context, new LinkedList<Object>(Arrays.asList(mDifferencesList.toArray())));
         binding.discountsRcv.setHasFixedSize(true);
         binding.discountsRcv.setLayoutManager(new LinearLayoutManager(context));
         binding.discountsRcv.setAdapter(mSalaryDetailsAdapter);

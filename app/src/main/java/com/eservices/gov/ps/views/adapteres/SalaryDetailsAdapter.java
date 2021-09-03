@@ -17,7 +17,7 @@ import com.eservices.gov.ps.models.Discounts;
 
 import java.util.List;
 
-public class CustomSalaryDetailsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class SalaryDetailsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private Context mContext;
     private List<Object> mObjectsList;
@@ -25,7 +25,7 @@ public class CustomSalaryDetailsAdapter extends RecyclerView.Adapter<RecyclerVie
     private static final int DIFFERENCES_VIEW_TYPE = 1;
     private static final int DISCOUNTS_VIEW_TYPE = 2;
 
-    public CustomSalaryDetailsAdapter(Context mContext, List<Object> mObjectsList) {
+    public SalaryDetailsAdapter(Context mContext, List<Object> mObjectsList) {
         this.mContext = mContext;
         this.mObjectsList = mObjectsList;
     }

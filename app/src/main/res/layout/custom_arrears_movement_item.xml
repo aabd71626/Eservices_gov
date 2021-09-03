@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="19dp"
+    android:layout_marginTop="19dp"
+    android:layout_marginRight="19dp"
+    android:layoutDirection="rtl"
+    app:cardBackgroundColor="@color/card_view_background"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.eservices.gov.ps.views.custom.CustomSalaryInfoItem
+                android:id="@+id/arrears_movement_datetime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:titleSalaryInfo="راتب الشهر"
+                app:titleTextSize="6dp"
+                app:valueSalaryInfo="08/2021"
+                app:valueTextSize="7dp" />
+
+            <com.eservices.gov.ps.views.custom.CustomSalaryInfoItem
+                android:id="@+id/arrears_movement_for_dues"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:titleSalaryInfo="للمستحقات"
+                app:titleTextSize="6dp"
+                app:valueSalaryInfo="450.48"
+                app:valueTextSize="7dp" />
+
+            <com.eservices.gov.ps.views.custom.CustomSalaryInfoItem
+                android:id="@+id/arrears_movement_for_employee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:titleSalaryInfo="للموظف"
+                app:titleTextSize="6dp"
+                app:valueSalaryInfo="430"
+                app:valueTextSize="7dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <com.eservices.gov.ps.views.custom.CustomSalaryInfoItem
+                android:id="@+id/arrears_movement_dues_funds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:titleSalaryInfo="رصيد المستحقات"
+                app:titleTextSize="6dp"
+                app:valueSalaryInfo="450.48"
+                app:valueTextSize="7dp" />
+
+            <com.eservices.gov.ps.views.custom.CustomSalaryInfoItem
+                android:id="@+id/arrears_movement_notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:titleSalaryInfo="ملاحظات"
+                app:titleTextSize="6dp"
+                app:valueSalaryInfo="رصيد سابق"
+                app:valueTextSize="7dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

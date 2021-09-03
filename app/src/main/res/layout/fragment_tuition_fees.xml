@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white_700"
+    android:layoutDirection="rtl"
     tools:context=".views.fragments.TuitionFeesFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/tuition_fees_rcv"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent" />-->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <include layout="@layout/custom_tuition_fees_order" />
+       <include layout="@layout/custom_tuition_fees_order" />
+   </LinearLayout>
 
-</FrameLayout>
+    <Button
+        android:id="@+id/tuition_fees_btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/amariya_bold"
+        android:text="طلب تسديد جديد"
+        android:background="@drawable/btn_print_shape"
+        android:stateListAnimator="@null"
+        android:textSize="22dp" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

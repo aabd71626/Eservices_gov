@@ -1,128 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layoutDirection="rtl"
-    android:fillViewport="true"
     android:background="@color/white_700"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
     tools:context=".views.fragments.SalaryHistoryFragment">
 
-    <LinearLayout
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="19dp"
+        app:cardBackgroundColor="@color/card_view_background"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="8dp">
 
-
-        <androidx.cardview.widget.CardView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="19dp"
-            android:layout_marginRight="19dp"
-            android:layout_marginTop="19dp"
-            android:layout_marginBottom="19dp"
-            app:cardBackgroundColor="@color/card_view_background"
-            app:cardCornerRadius="5dp"
-            app:cardElevation="8dp">
+            android:orientation="vertical">
 
-            <LinearLayout
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/amariya_heavy"
+                android:gravity="center"
+                android:text="رواتب الموظف"
+                android:textColor="@color/text_color1"
+                android:textSize="20dp" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="10dp"
-                    android:fontFamily="@font/amariya_heavy"
-                    android:gravity="center"
-                    android:text="رواتب الموظف"
-                    android:textColor="@color/text_color1"
-                    android:textSize="20dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white_700" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"
-                    android:background="@color/white_700"
-                    android:layout_marginBottom="5dp"/>
+            <EditText
+                android:id="@+id/salary_history_search"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/search_salary_edittext"
+                android:fontFamily="@font/amariya_regular"
+                android:hint="بحث"
+                android:maxEms="100"
+                android:maxLines="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/text_color1" />
 
-                <EditText
-                    android:id="@+id/salary_history_search"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:maxLines="1"
-                    android:maxEms="100"
-                    android:layout_margin="10dp"
-                    android:hint="بحث"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="10dp"
-                    android:background="@drawable/search_salary_edittext"
-                    android:fontFamily="@font/amariya_regular"
-                    android:textColor="@color/text_color1" />
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1,2,3,4,5,6">
 
-                <TableLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:stretchColumns="1,2,3,4,5,6">
+                <TableRow>
 
-                    <TableRow>
+                    <TextView
+                        android:layout_column="1"
+                        android:maxWidth="20dp"
+                        android:minWidth="20dp"
+                        android:text="#"
+                        android:theme="@style/titleTableStyle" />
 
-                        <TextView
-                            android:layout_column="1"
-                            android:text="#"
-                            android:maxWidth="20dp"
-                            android:minWidth="20dp"
-                            android:theme="@style/titleTableStyle" />
+                    <TextView
+                        android:layout_width="63dp"
+                        android:layout_column="1"
+                        android:maxWidth="35dp"
+                        android:minWidth="35dp"
+                        android:text="الشهر"
+                        android:theme="@style/titleTableStyle" />
 
-                        <TextView
-                            android:layout_width="63dp"
-                            android:layout_column="1"
-                            android:maxWidth="35dp"
-                            android:minWidth="35dp"
-                            android:text="الشهر"
-                            android:theme="@style/titleTableStyle" />
+                    <TextView
+                        android:layout_column="1"
+                        android:maxWidth="25dp"
+                        android:minWidth="25dp"
+                        android:text="الفئة"
+                        android:theme="@style/titleTableStyle" />
 
-                        <TextView
-                            android:layout_column="1"
-                            android:text="الفئة"
-                            android:minWidth="25dp"
-                            android:maxWidth="25dp"
-                            android:theme="@style/titleTableStyle" />
+                    <TextView
+                        android:layout_column="1"
+                        android:maxWidth="32dp"
+                        android:minWidth="32dp"
+                        android:text="الدرجة"
+                        android:theme="@style/titleTableStyle" />
 
-                        <TextView
-                            android:layout_column="1"
-                            android:text="الدرجة"
-                            android:maxWidth="32dp"
-                            android:minWidth="32dp"
-                            android:theme="@style/titleTableStyle" />
+                    <TextView
+                        android:layout_column="1"
+                        android:minWidth="35dp"
+                        android:text="في البنك"
+                        android:theme="@style/titleTableStyle" />
 
-                        <TextView
-                            android:layout_column="1"
-                            android:text="في البنك"
-                            android:minWidth="35dp"
-                            android:theme="@style/titleTableStyle" />
+                    <TextView
+                        android:layout_column="1"
+                        android:minWidth="40dp"
+                        android:text="إجراءات"
+                        android:theme="@style/titleTableStyle" />
+                </TableRow>
+            </TableLayout>
 
-                        <TextView
-                            android:layout_column="1"
-                            android:text="إجراءات"
-                            android:minWidth="40dp"
-                            android:theme="@style/titleTableStyle" />
-                    </TableRow>
-                </TableLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/salary_history_rcv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                tools:itemCount="5"
+                tools:listitem="@layout/custom_salary_history_item" />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/salary_history_rcv"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="7dp"
-                    tools:itemCount="5"
-                    tools:listitem="@layout/custom_salary_history_item"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-
-    </LinearLayout>
-</ScrollView>
+</LinearLayout>

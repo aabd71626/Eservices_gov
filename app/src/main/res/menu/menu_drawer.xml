@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
         <item android:title="الرئيسية">
             <menu>
                 <item
-                    android:id="@+id/menu_home"
+                    android:id="@+id/nav_home"
                     android:icon="@drawable/ic_home"
                     android:title="الرئيسية"
                     app:showAsAction="always" />
                 <item
-                    android:id="@+id/menu_salary"
+                    android:id="@+id/nav_salary"
                     android:icon="@drawable/ic_salary"
                     android:title="قسيمة الراتب"
                     app:showAsAction="always" />
@@ -23,32 +25,43 @@
         <item android:title="المتأخرات">
             <menu>
                 <item
-                    android:id="@+id/menu_arrears_details"
+                    android:id="@+id/nav_arrears_details"
                     android:title="تفاصيل المتأخرات"
                     app:showAsAction="always"
                     android:icon="@drawable/ic_details"/>
                 <item
-                    android:id="@+id/menu_arrears_movement"
+                    android:id="@+id/nav_arrears_movement"
                     android:title="حركة المتأخرات"
                     app:showAsAction="always"
                     android:icon="@drawable/ic_debt"/>
             </menu>
         </item>
     </group>
+    <group android:checkableBehavior="single">
+        <item android:title="رسوم دراسية">
+            <menu>
+                <item
+                    android:id="@+id/nav_tuition_fees_new"
+                    android:title="تسديد رسوم دراسية جديدة"
+                    app:showAsAction="always"
+                    android:icon="@drawable/ic_payment"/>
+                <item
+                    android:id="@+id/nav_tuition_fees_old"
+                    android:title=" طلبات تسديد رسوم دراسية"
+                    app:showAsAction="always"
+                    android:icon="@drawable/ic_payment"/>
+            </menu>
+        </item>
+    </group>
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/menu_tuition_fees"
-            android:title="تسديد رسوم دراسية"
-            app:showAsAction="always"
-            android:icon="@drawable/ic_payment"/>
-        <item
-            android:id="@+id/menu_transportation"
+            android:id="@+id/nav_transportation"
             android:title="المواصلات"
             app:showAsAction="always"
             android:icon="@drawable/ic_bus"/>
         <item
-            android:id="@+id/menu_website"
+            android:id="@+id/nav_website"
             android:title="موقع وزارة المالية"
             app:showAsAction="always"
             android:icon="@drawable/ic_website"/>

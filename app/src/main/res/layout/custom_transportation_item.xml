@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="19dp"
+    android:layout_marginLeft="19dp"
+    android:layout_marginRight="19dp"
+    android:layoutDirection="rtl"
+    app:cardBackgroundColor="@color/card_view_background"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="8dp"
+        android:orientation="vertical"
+        android:paddingBottom="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.eservices.gov.ps.views.custom.CustomSalaryInfoItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:titleSalaryInfo="تاريخ البداية"
+                app:valueSalaryInfo="2008/5/17"
+                app:titleTextSize="6dp"
+                app:valueTextSize="7dp"/>
+
+            <com.eservices.gov.ps.views.custom.CustomSalaryInfoItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:titleSalaryInfo="تاريخ النهاية"
+                app:valueSalaryInfo="2008/8/30"
+                app:titleTextSize="6dp"
+                app:valueTextSize="7dp"/>
+            <com.eservices.gov.ps.views.custom.CustomSalaryInfoItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:titleSalaryInfo="القيمة"
+                app:valueSalaryInfo="90"
+                app:titleTextSize="6dp"
+                app:valueTextSize="7dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <com.eservices.gov.ps.views.custom.CustomSalaryInfoItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:titleSalaryInfo="البيان"
+                app:valueSalaryInfo="بناءا علي ك د ص ت 2010/2/14 برقم 14578 يفيد مواصلة من غزة/التفاح الي غزة/وزارة المالية اعتبار من 2008/8/24 حتى 2008/10/29"
+                app:titleTextSize="6dp"
+                app:valueTextSize="7dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

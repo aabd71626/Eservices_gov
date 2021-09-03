@@ -7,21 +7,18 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.eservices.gov.ps.R;
 import com.eservices.gov.ps.databinding.FragmentSalaryHistoryBinding;
 import com.eservices.gov.ps.models.OnClickSalaryDetails;
 import com.eservices.gov.ps.models.Salary;
 import com.eservices.gov.ps.views.activities.SalaryDetailsActivity;
-import com.eservices.gov.ps.views.adapteres.CustomSalaryHistoryAdapter;
+import com.eservices.gov.ps.views.adapteres.SalaryHistoryAdapter;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -38,7 +35,7 @@ public class SalaryHistoryFragment extends Fragment {
     private static final String TAG = "SalaryHistoryFragment";
     private FragmentSalaryHistoryBinding binding;
     private Context context;
-    private CustomSalaryHistoryAdapter historyAdapter;
+    private SalaryHistoryAdapter historyAdapter;
     private List<Salary> salaryList;
 
     public SalaryHistoryFragment() {
@@ -86,7 +83,7 @@ public class SalaryHistoryFragment extends Fragment {
         salaryList.add(new Salary("5","10/2020","","0 / 0","1746"));
         salaryList.add(new Salary("6","11/2020","","0 / 0","1847"));
 
-        historyAdapter = new CustomSalaryHistoryAdapter(context, salaryList, new OnClickSalaryDetails() {
+        historyAdapter = new SalaryHistoryAdapter(context, salaryList, new OnClickSalaryDetails() {
             @Override
             public void onClick() {
                 Intent intent = new Intent(context, SalaryDetailsActivity.class);

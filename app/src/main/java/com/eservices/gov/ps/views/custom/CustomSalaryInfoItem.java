@@ -15,6 +15,8 @@ public class CustomSalaryInfoItem extends LinearLayout {
     private static final String TAG = "CustomSalaryInfoItem";
     private TextView titleView, valueView;
     private String title,value;
+    private float titleTextSize;
+    private float valueTextSize;
 
     public CustomSalaryInfoItem(Context context) {
         super(context, null);
@@ -59,9 +61,12 @@ public class CustomSalaryInfoItem extends LinearLayout {
         try {
             title = attributes.getString(R.styleable.attr_custom_salary_info_item_titleSalaryInfo);
             value = attributes.getString(R.styleable.attr_custom_salary_info_item_valueSalaryInfo);
-
+            titleTextSize = attributes.getDimension(R.styleable.attr_custom_salary_info_item_titleTextSize,18);
+            valueTextSize = attributes.getDimension(R.styleable.attr_custom_salary_info_item_valueTextSize,24);
             titleView.setText(title);
+            titleView.setTextSize(titleTextSize);
             valueView.setText(value);
+            valueView.setTextSize(valueTextSize);
         } catch (Exception e) {
             Log.e(TAG, "onCreate: " + e.toString());
         }

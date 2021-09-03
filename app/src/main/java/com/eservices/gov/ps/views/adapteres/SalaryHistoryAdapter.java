@@ -1,7 +1,6 @@
 package com.eservices.gov.ps.views.adapteres;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,29 +8,23 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.eservices.gov.ps.databinding.CustomAdditionsItemBinding;
-import com.eservices.gov.ps.databinding.CustomDifferencesItemBinding;
 import com.eservices.gov.ps.databinding.CustomSalaryHistoryItemBinding;
-import com.eservices.gov.ps.models.Additions;
-import com.eservices.gov.ps.models.Differences;
-import com.eservices.gov.ps.models.Discounts;
 import com.eservices.gov.ps.models.OnClickSalaryDetails;
 import com.eservices.gov.ps.models.Salary;
-import com.eservices.gov.ps.views.activities.SalaryDetailsActivity;
 
 import java.util.List;
 
-public class CustomSalaryHistoryAdapter extends RecyclerView.Adapter<CustomSalaryHistoryAdapter.CustomSalaryViewHolder> {
+public class SalaryHistoryAdapter extends RecyclerView.Adapter<SalaryHistoryAdapter.CustomSalaryViewHolder> {
 
     private Context mContext;
     private List<Salary> mSalaryList;
     private OnClickSalaryDetails clickSalaryDetails;
-    public CustomSalaryHistoryAdapter(Context mContext, List<Salary> mSalaryList) {
+    public SalaryHistoryAdapter(Context mContext, List<Salary> mSalaryList) {
         this.mContext = mContext;
         this.mSalaryList = mSalaryList;
     }
 
-    public CustomSalaryHistoryAdapter(Context mContext, List<Salary> mSalaryList, OnClickSalaryDetails clickSalaryDetails) {
+    public SalaryHistoryAdapter(Context mContext, List<Salary> mSalaryList, OnClickSalaryDetails clickSalaryDetails) {
         this.mContext = mContext;
         this.mSalaryList = mSalaryList;
         this.clickSalaryDetails = clickSalaryDetails;

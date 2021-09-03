@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="19dp"
+    android:layout_marginLeft="19dp"
+    android:layout_marginRight="19dp"
+    android:layoutDirection="rtl"
+    app:cardBackgroundColor="@color/card_view_background"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="8dp"
+        android:orientation="vertical"
+        android:paddingBottom="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.eservices.gov.ps.views.custom.CustomSalaryInfoItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:titleSalaryInfo="رقم طلب"
+                app:valueSalaryInfo="4592"
+                app:titleTextSize="6dp"
+                app:valueTextSize="7dp"/>
+
+            <com.eservices.gov.ps.views.custom.CustomSalaryInfoItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:titleSalaryInfo="تاريخ طلب"
+                app:valueSalaryInfo="2015/8/30"
+                app:titleTextSize="6dp"
+                app:valueTextSize="7dp"/>
+            <com.eservices.gov.ps.views.custom.CustomSalaryInfoItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:titleSalaryInfo="رقم هوية طالب"
+                app:valueSalaryInfo="741258963"
+                app:titleTextSize="6dp"
+                app:valueTextSize="7dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <com.eservices.gov.ps.views.custom.CustomSalaryInfoItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:titleSalaryInfo="اسم طالب"
+                app:valueSalaryInfo="محمد فؤاد"
+                app:titleTextSize="6dp"
+                app:valueTextSize="7dp"/>
+
+            <com.eservices.gov.ps.views.custom.CustomSalaryInfoItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:titleSalaryInfo="الجامعة"
+                app:valueSalaryInfo="جامعة الاسلامية"
+                app:titleTextSize="6dp"
+                app:valueTextSize="7dp"/>
+            <com.eservices.gov.ps.views.custom.CustomSalaryInfoItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:titleSalaryInfo="رقم الجامعي"
+                app:valueSalaryInfo="120150368"
+                app:titleTextSize="6dp"
+                app:valueTextSize="7dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <com.eservices.gov.ps.views.custom.CustomSalaryInfoItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:titleSalaryInfo="المبلغ المسدد من\n المستحقات"
+                app:valueSalaryInfo="1500"
+                app:titleTextSize="6dp"
+                app:valueTextSize="7dp"/>
+
+            <com.eservices.gov.ps.views.custom.CustomSalaryInfoItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:titleSalaryInfo="العملة"
+                app:valueSalaryInfo="شيكل"
+                app:titleTextSize="6dp"
+                app:valueTextSize="7dp"/>
+            <com.eservices.gov.ps.views.custom.CustomSalaryInfoItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:titleSalaryInfo="رقم طلب لدى جامعة"
+                app:valueSalaryInfo="7485"
+                app:titleTextSize="6dp"
+                app:valueTextSize="7dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <com.eservices.gov.ps.views.custom.CustomSalaryInfoItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:titleSalaryInfo="حالة طلب"
+                app:valueSalaryInfo="قيد فحص"
+                app:titleTextSize="6dp"
+                app:valueTextSize="7dp"/>
+
+            <com.eservices.gov.ps.views.custom.CustomSalaryInfoItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:titleSalaryInfo="ملاحظات"
+                app:valueSalaryInfo="طلب قيد فحص من قبل لجنة"
+                app:titleTextSize="6dp"
+                app:valueTextSize="7dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

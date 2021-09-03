@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
+    android:gravity="center_vertical"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/selver_dark"
+        android:layout_marginTop="-1dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الأسم : "
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/amariya_heavy" />
+        <TextView
+            android:id="@+id/header_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="محمد محمود"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/amariya_heavy" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/selver_dark"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="رقم الهوية : "
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:fontFamily="@font/amariya_heavy" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="941235678"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:fontFamily="@font/amariya_heavy" />
+    </LinearLayout>
+    <View
+        android:id="@+id/bottom_rounded_view"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        style="@style/TransparentView"
+        android:background="@drawable/round_top_background" />
+</LinearLayout>

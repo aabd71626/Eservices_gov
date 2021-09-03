@@ -12,16 +12,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.eservices.gov.ps.R;
 import com.eservices.gov.ps.databinding.FragmentAdditionsBinding;
 import com.eservices.gov.ps.models.Additions;
-import com.eservices.gov.ps.views.adapteres.CustomSalaryDetailsAdapter;
+import com.eservices.gov.ps.views.adapteres.SalaryDetailsAdapter;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
-import java.util.List;
 
 public class AdditionsFragment extends Fragment {
 
@@ -33,7 +30,7 @@ public class AdditionsFragment extends Fragment {
     private String mParam1;
     private String mParam2;
     private ArrayList<Object> mAdditionsList;
-    private CustomSalaryDetailsAdapter additionsAdapter;
+    private SalaryDetailsAdapter additionsAdapter;
     private Context context;
     private FragmentAdditionsBinding binding;
 
@@ -87,7 +84,7 @@ public class AdditionsFragment extends Fragment {
         mAdditionsList.add(new Additions(1,5489,"نفقات طارئة","-","مبلغ","1400"));
         mAdditionsList.add(new Additions(1,5489,"نفقات طارئة","-","مبلغ","1400"));
 
-        additionsAdapter = new CustomSalaryDetailsAdapter(context, new LinkedList<Object>(Arrays.asList(mAdditionsList.toArray())));
+        additionsAdapter = new SalaryDetailsAdapter(context, new LinkedList<Object>(Arrays.asList(mAdditionsList.toArray())));
         binding.additionsRcv.setHasFixedSize(true);
         binding.additionsRcv.setLayoutManager(new LinearLayoutManager(context));
         binding.additionsRcv.setAdapter(additionsAdapter);
